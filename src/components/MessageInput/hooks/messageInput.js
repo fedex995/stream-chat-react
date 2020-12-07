@@ -464,6 +464,7 @@ export default function useMessageInput(props) {
         {
           ...updatedMessage,
           parent,
+          show_in_channel: true
         },
         channel.cid,
       );
@@ -472,6 +473,7 @@ export default function useMessageInput(props) {
       const sendMessagePromise = sendMessage({
         ...updatedMessage,
         parent,
+        show_in_channel: true
       });
       logChatPromiseExecution(sendMessagePromise, 'send message');
       dispatch({ type: 'clear' });
