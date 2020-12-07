@@ -443,6 +443,7 @@ export default function useMessageInput(props) {
       text,
       attachments: newAttachments,
       mentioned_users: actualMentionedUsers,
+      show_in_channel: true
     };
 
     if (!!message && editMessage) {
