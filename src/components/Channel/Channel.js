@@ -346,6 +346,7 @@ const ChannelInner = ({
         mentioned_users,
         id,
         parent_id,
+        show_in_channel: true
       };
 
       try {
